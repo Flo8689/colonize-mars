@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('zone_minerals', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('zone_id')->constrained('dangerzones')->nullable();
-            $table->foreignId('mineral_id')->constrained('minerals')->nullable();
+            $table->foreignId('zone_id')->constrained('dangerzones')->references('id')->on('dangerzones')->onDelete('cascade');
+            $table->foreignId('mineral_id')->constrained('minerals')->references('id')->on('minerals')->onDelete('cascade');
             $table->timestamps();
         });
     }

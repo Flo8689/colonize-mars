@@ -15,6 +15,7 @@
         <th scope="col">Longitude</th>
         <th scope="col">Niveau de danger</th>
         <th scope="col">Date</th>
+        <th scope="col">Modifier</th>
       </tr>
     </thead>
     <tbody>
@@ -29,6 +30,18 @@
           <td class="longitude" scope="col">{{$zone->location_long}}</td>
           <td scope="col">{{$zone->danger_lvl}}</td>
           <td scope="col">{{$zone->reported_on}}</td>
+          <td scope="col">
+            <div class="d-flex justify-content-end">
+              <div class="d-flex justify-content-end">
+                <a href="/update/{{$zone->id}}" class="text-white p-2">
+                  <i class="fa-solid fa-pen-to-square" style="color:white" ></i>
+                </a>
+                <a href="/{{$zone->id}}" class="text-white p-2">
+                  <i class="fa-solid fa-trash"></i>
+                </a>
+              </div>
+            </div>
+          </td>
         </tr>
 
       @endforeach

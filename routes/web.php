@@ -24,4 +24,7 @@ Route::get('/mineral', [MineralController::class, 'list']);
 Route::get('/mineral/create', [MineralController::class, 'create']);
 Route::post('/mineral/create', [MineralController::class, 'create']);
 Route::get('/about', [MainController::class, 'show']);
+Route::get('/update/{id}', [DangerzoneController::class, 'update']);
+Route::post('/update/{id}', [DangerzoneController::class, 'update']);
+Route::get('/{id}', [DangerzoneController::class, 'delete']);
 
