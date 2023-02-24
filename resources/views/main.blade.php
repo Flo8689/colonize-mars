@@ -68,8 +68,8 @@
                     <div class="zone col-1" data-lat="1" data-lng="8">1-8</div>
                     <div class="zone col-1" data-lat="1" data-lng="9">1-9</div>
                     <div class="zone col-1" data-lat="1" data-lng="10">1-10</div>
-                    <div class="zone col-1" data-lat="1" data-lng="11">1-10</div>
-                    <div class="zone col-1" data-lat="1" data-lng="12">1-8</div>
+                    <div class="zone col-1" data-lat="1" data-lng="11">1-11</div>
+                    <div class="zone col-1" data-lat="1" data-lng="12">1-12</div>
                   </div>
                   <div class="row">
                     <div class="zone col-1" data-lat="2" data-lng="1">2-1</div>
